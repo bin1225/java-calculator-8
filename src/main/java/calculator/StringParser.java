@@ -5,13 +5,7 @@ import java.util.List;
 
 public class StringParser {
 
-    private final Separator separator;
-
-    public StringParser(Separator separator) {
-        this.separator = separator;
-    }
-
-    public List<Integer> parseNumbers(String expression) {
+    public static List<Integer> parseNumbers(String expression, Separator separator) {
         List<Integer> resultNumbers = new ArrayList<>();
         StringBuilder number = new StringBuilder();
 
