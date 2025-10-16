@@ -10,8 +10,8 @@ public class SeparatorParser {
      * @return          커스텀 구분자 선언부를 제외한 숫자 표현식 문자열
      */
     public static String parseSeparators(String input, Separator separator) {
-        if(input.startsWith("//")) {
-            int newStartIndex = input.indexOf("\\n")+1;
+        if (input.startsWith("//")) {
+            int newStartIndex = input.indexOf("\\n") + 1;
             System.out.println(newStartIndex);
             String customDelimiters = input.substring(2, newStartIndex);
             // 각 문자를 구분자로 등록
