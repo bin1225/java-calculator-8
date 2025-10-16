@@ -9,7 +9,7 @@ public class SeparatorParser {
      * @param separator 커스텀 구분자를 등록할 {@link Separator} 객체
      * @return          커스텀 구분자 선언부를 제외한 숫자 표현식 문자열
      */
-    public static String parseSeparators(String input, Separator separator) {
+    public static String parseAndExtractExpression(String input, Separator separator) {
         if (input.startsWith("//")) {
             int newStartIndex = input.indexOf("\\n") + 1;
             System.out.println(newStartIndex);
