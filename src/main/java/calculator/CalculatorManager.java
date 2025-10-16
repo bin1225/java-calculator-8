@@ -11,8 +11,10 @@ public class CalculatorManager {
 
     public static void run() {
         System.out.println("덧셈할 문자열을 입력해주세요.");
+        String input = Console.readLine();
 
-        int result = calculator.calculate(Console.readLine());
+        String parsedInput = SeparatorParser.parseSeparators(input, defaultSeparators);
+        int result = calculator.calculate(parsedInput);
 
         System.out.printf("결과 : %d\n", result);
     }
