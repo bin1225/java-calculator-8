@@ -1,5 +1,7 @@
 package calculator;
 
+import calculator.print.InputView;
+import calculator.print.OutputView;
 import camp.nextstep.edu.missionutils.Console;
 import java.util.List;
 
@@ -10,12 +12,12 @@ public class CalculatorManager {
 
 
     public static void run() {
-        System.out.println("덧셈할 문자열을 입력해주세요.");
+        InputView.readExpression();
         String input = Console.readLine();
 
         String parsedInput = SeparatorParser.parseAndExtractExpression(input, targetSeparators);
         int result = calculator.calculate(parsedInput);
 
-        System.out.printf("결과 : %d\n", result);
+        OutputView.printResult(result);
     }
 }
