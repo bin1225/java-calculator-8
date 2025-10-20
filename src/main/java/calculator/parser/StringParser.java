@@ -1,5 +1,6 @@
-package calculator;
+package calculator.parser;
 
+import calculator.domain.Separator;
 import java.util.ArrayList;
 import java.util.List;
 

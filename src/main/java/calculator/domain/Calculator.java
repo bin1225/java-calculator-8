@@ -1,5 +1,6 @@
-package calculator;
+package calculator.domain;
 
+import calculator.parser.StringParser;
 import java.util.List;
 
 public class Calculator {

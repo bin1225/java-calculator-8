@@ -1,5 +1,8 @@
-package calculator;
+package calculator.manager;
 
+import calculator.domain.Calculator;
+import calculator.domain.Separator;
+import calculator.parser.SeparatorParser;
 import calculator.print.InputView;
 import calculator.print.OutputView;
 import camp.nextstep.edu.missionutils.Console;

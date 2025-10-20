@@ -1,5 +1,7 @@
-package calculator;
+package calculator.parser;
 
+
+import calculator.domain.Separator;
 
 public class SeparatorParser {
 
